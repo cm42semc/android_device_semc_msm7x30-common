@@ -87,6 +87,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
     LegacyCamera \
+    libnetcmdiface \
     Torch
 
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -118,5 +119,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwui.disable_vsync=true \
     debug.mdpcomp.logs=0 \
     BUILD_UTC_DATE=0 \
-    persist.sys.usb.config=mtp \
-    debug.camcorder.disablemeta=1
+    persist.sys.usb.config=mass_storage,adb \
+    debug.camcorder.disablemeta=1 \
+    ro.lcd_min_brightness=20 \
+    dalvik.vm.dexopt-data-only=1 \
+    ro.debuggable=1 \
+    persist.sys.strictmode.visual=0 \
+    persist.sys.strictmode.disable=1 
