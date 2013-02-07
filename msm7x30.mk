@@ -124,4 +124,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dexopt-data-only=1 \
     ro.debuggable=1 \
     persist.sys.strictmode.visual=0 \
-    persist.sys.strictmode.disable=1 
+    persist.sys.strictmode.disable=1 \
+    ro.hardware.respect_als=true
