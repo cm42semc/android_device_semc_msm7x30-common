@@ -97,6 +97,7 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=131072 \
+    debug.hwc.fakevsync=1 \
     rild.libpath=/system/lib/libril-qc-1.so \
     rild.libargs=-d/dev/smd0 \
     ro.ril.hsxpa=1 \
