@@ -85,6 +85,7 @@ PRODUCT_PACKAGES += \
 #Misc
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory \
+    LegacyCamera \
     libnetcmdiface \
     Torch
 
