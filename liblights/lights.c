@@ -48,6 +48,8 @@ enum {
 	LED_BLANK
 };
 
+const int LCD_BRIGHTNESS_MIN = 10;
+
 static int write_int (const char *path, int value) {
 	int fd;
 	static int already_warned = 0;
@@ -105,6 +107,9 @@ static int rgb_to_brightness (struct light_state_t const* state) {
 static int set_light_backlight (struct light_device_t *dev, struct light_state_t const *state) {
 	int err = 0;
 	int brightness = rgb_to_brightness(state);
+
+	if (brightness < LCD_BRIGHTNESS_MIN)
+		brightness = LCD_BRIGHTNESS_MIN;
 
 	ALOGV("%s brightness=%d", __func__, brightness);
 	pthread_mutex_lock(&g_lock);
