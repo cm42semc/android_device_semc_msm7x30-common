@@ -94,4 +94,5 @@ TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/semc/msm7x30-common/releaset
 TARGET_PROVIDES_LIBLIGHT := true
 
 # Light Sensor
-BOARD_SYSFS_LIGHT_SENSOR := /sys/class/leds/lcd-backlight/als/enable
+SOMC_CFG_SENSORS_LIGHT_AS3676 := yes
+SOMC_CFG_SENSORS_LIGHT_AS3676_PATH := "/sys/devices/i2c-0/0-0040/adc_als_value" 
