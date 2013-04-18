@@ -337,8 +337,6 @@ struct kgsl_map_user_mem {
 	unsigned int hostptr;   /*input param */
 	enum kgsl_user_mem_type memtype;
 	unsigned int flags;
-	unsigned int reserved;	/* May be required to add
-				params for another mem type */
 };
 
 #define IOCTL_KGSL_MAP_USER_MEM \
