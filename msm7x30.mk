@@ -46,6 +46,7 @@ PRODUCT_COPY_FILES += \
     device/semc/msm7x30-common/prebuilt/vold.fstab:system/etc/vold.fstab \
     device/semc/msm7x30-common/prebuilt/fstab:root/fstab \
     device/semc/msm7x30-common/prebuilt/fstab.semc:root/fstab.semc \
+    device/semc/msm7x30-common/prebuilt/firmware/wl127x-fw-5-sr.bin:root/firmware/wl127x-fw-5-sr.bin \
     device/semc/msm7x30-common/prebuilt/postrecoveryboot.sh:root/sbin/postrecoveryboot.sh
 
 # Audio
