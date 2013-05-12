@@ -48,7 +48,6 @@ BOARD_EGL_CFG := device/semc/msm7x30-common/prebuilt/egl.cfg
 
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_HAVE_BLUETOOTH := true
-BOARD_HAVE_BLUETOOTH_BLUEZ := true
 
 # Webkit
 TARGET_FORCE_CPU_UPLOAD := true
